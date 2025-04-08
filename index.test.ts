@@ -7,6 +7,6 @@ describe('find overlapping coordinates function', () => {
         const blueRectangle = [[1,-1],[4,7]];
 
         const result = findOverlappingCoordinates([yellowRectangle,blueRectangle])
-        expect(result).toBe([[1,1],[4,6]]);
+        expect(result).toStrictEqual([[1,1],[4,6]]);
     })
   })
