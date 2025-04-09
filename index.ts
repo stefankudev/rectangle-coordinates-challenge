@@ -1,7 +1,7 @@
 export type CoordinatesArray = number[][];
 export type RectangleCoordinates = [CoordinatesArray,CoordinatesArray]
 
-export const findOverlappingCoordinates = (rectangles: RectangleCoordinates): CoordinatesArray => {
+export const findOverlapCoordinates = (rectangles: RectangleCoordinates): CoordinatesArray => {
     const [rectangle1, rectangle2] = rectangles;
     const [r1x, r1y] = rectangle1;
     const [r2x, r2y] = rectangle2;
