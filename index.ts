@@ -12,10 +12,10 @@ export const findOverlapCoordinates = (rectangles: RectangleCoordinates): Result
     const overlap_x2 = Math.min(rect1_x2, rect2_x2);
     const overlap_y2 = Math.min(rect1_y2, rect2_y2);
 
-    const noOverlapOnX = overlap_x1 >= overlap_x2;
-    const noOverlapOnY = overlap_y1 >= overlap_y2;
+    const noOverlapOnAxisX = overlap_x1 >= overlap_x2;
+    const noOverlapOnAxisY = overlap_y1 >= overlap_y2;
 
-    if (noOverlapOnX || noOverlapOnY) {
+    if (noOverlapOnAxisX || noOverlapOnAxisY) {
         return null;
     }
 
